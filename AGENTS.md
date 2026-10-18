@@ -49,6 +49,9 @@ src/
 
 ## Feature public APIs
 
+- Use **Server Components by default** in the App Router.
+- Use **Client Components only when needed for interactivity** (event handlers, browser APIs, local UI state, or client-only hooks such as `useState`/`useEffect`).
+- Keep client boundaries as small as possible and avoid promoting entire trees to client rendering when only a leaf needs interaction.
 - Expose each feature's supported external components, functions, and types through its root `index.ts`. Export only what consumers need, using explicit named exports.
 - Consumers in `app` or other features must import from the feature's public API, never its internal paths. For example, use `@/features/<feature>` instead of `@/features/<feature>/components/<component>`.
 - Within a feature, use direct relative imports for internal modules instead of importing through its own public API, which can create circular dependencies.
