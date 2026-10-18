@@ -18,22 +18,6 @@ We want this starter Next.js project to be clean and consistent across setup, co
   - `npm-shrinkwrap.json` (if present)
 - For size-limit, use a **minimal starter budget** appropriate for a skeleton app.
 
-## Phase 4 — TypeScript checks for type errors
-### Objectives
-- Enforce static type safety in local development and CI.
-
-### Tasks
-1. Add/verify `pnpm typecheck` script (`tsc --noEmit`).
-2. Ensure `tsconfig` supports project/test typing requirements.
-3. Document typecheck command in README.
-4. Add typecheck to CI quality workflow.
-
-### Validation
-- `pnpm typecheck` passes.
-- CI fails on type errors.
-
----
-
 ## Phase 5 — Bundle-size guardrails with size-limit
 ### Objectives
 - Add automated bundle-size protection early while the app is still small.

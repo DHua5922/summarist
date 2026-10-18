@@ -66,3 +66,19 @@
 - CI fails on new dead-code issues.
 
 ---
+
+## Phase 4 — TypeScript checks for type errors
+### Objectives
+- Enforce static type safety in local development and CI.
+
+### Tasks
+1. Add/verify `pnpm typecheck` script (`tsc --noEmit`).
+2. Ensure `tsconfig` supports project/test typing requirements.
+3. Document typecheck command in README.
+4. Add typecheck to CI quality workflow.
+
+### Validation
+- `pnpm typecheck` passes.
+- CI fails on type errors.
+
+---

@@ -17,6 +17,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 Use Biome for linting and formatting:
 
 ```bash
+pnpm typecheck
 pnpm lint
 pnpm format
 pnpm format:check
