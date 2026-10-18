@@ -11,7 +11,8 @@
     "lint": "biome check .",
     "format": "biome format . --write",
     "format:check": "biome format .",
-    "knip": "knip"
+    "knip": "knip",
+    "size": "size-limit"
   },
   "dependencies": {
     "next": "16.4.2",
@@ -20,11 +21,13 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.2",
+    "@size-limit/preset-app": "^14.2.0",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "knip": "^6.41.0",
+    "size-limit": "^14.2.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

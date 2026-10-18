@@ -82,3 +82,20 @@
 - CI fails on type errors.
 
 ---
+
+## Phase 5 — Bundle-size guardrails with size-limit
+### Objectives
+- Add automated bundle-size protection early while the app is still small.
+
+### Tasks
+1. Add `size-limit` dependencies/config if missing.
+2. Add/verify `pnpm size` script.
+3. Configure a minimal starter budget (initial conservative cap).
+4. Document the size check in README.
+5. Add size check to quality CI workflow.
+
+### Validation
+- `pnpm size` runs and enforces the configured budget.
+- CI fails if budget is exceeded.
+
+---
