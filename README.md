@@ -25,6 +25,15 @@ pnpm knip
 pnpm size
 ```
 
+## CI
+
+GitHub Actions runs quality checks on **every branch** for pushes and pull requests. The workflow includes:
+
+- TypeScript type checking (`pnpm typecheck`)
+- Biome lint + format checks (`pnpm lint`, `pnpm format:check`)
+- Knip dead-code checks (`pnpm knip`)
+- Build + bundle-size checks (`pnpm build`, `pnpm size`)
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
