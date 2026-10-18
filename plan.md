@@ -18,28 +18,6 @@ We want this starter Next.js project to be clean and consistent across setup, co
   - `npm-shrinkwrap.json` (if present)
 - For size-limit, use a **minimal starter budget** appropriate for a skeleton app.
 
-## Phase 2 — Biome lint/format configuration hardening
-### Objectives
-- Enforce consistent formatting and practical linting quality with Biome.
-
-### Tasks
-1. Configure `biome.json` for recommended best-practice defaults:
-   - recommended rules enabled,
-   - Next/React domains where applicable,
-   - clean includes/excludes for generated/build output.
-2. Keep formatter behavior explicit and deterministic.
-3. Ensure scripts support both local and CI flows:
-   - `pnpm lint`
-   - `pnpm format`
-4. Keep rule selection at recommended baseline strictness.
-
-### Validation
-- `pnpm lint` passes.
-- `pnpm format` is stable/deterministic.
-- CI quality workflow includes Biome checks.
-
----
-
 ## Phase 3 — Dead code checks with Knip
 ### Objectives
 - Detect and prevent unused files/exports/dependencies.

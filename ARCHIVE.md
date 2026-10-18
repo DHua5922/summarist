@@ -20,3 +20,29 @@
 - CI uses pnpm for dependency install and script execution.
 
 ---
+
+## Phase 2 — Biome lint/format configuration hardening
+
+### Objectives
+
+- Enforce consistent formatting and practical linting quality with Biome.
+
+### Tasks
+
+1. Configure `biome.json` for recommended best-practice defaults:
+   - recommended rules enabled,
+   - Next/React domains where applicable,
+   - clean includes/excludes for generated/build output.
+2. Keep formatter behavior explicit and deterministic.
+3. Ensure scripts support both local and CI flows:
+   - `pnpm lint`
+   - `pnpm format`
+4. Keep rule selection at recommended baseline strictness.
+
+### Validation
+
+- `pnpm lint` passes.
+- `pnpm format` is stable/deterministic.
+- CI quality workflow includes Biome checks.
+
+---
