@@ -18,25 +18,6 @@ We want this starter Next.js project to be clean and consistent across setup, co
   - `npm-shrinkwrap.json` (if present)
 - For size-limit, use a **minimal starter budget** appropriate for a skeleton app.
 
-## Phase 1 — pnpm standardization and package-manager cleanup
-### Objectives
-- Use pnpm as the only package manager across local and CI workflows.
-- Remove conflicting or redundant package-manager files.
-
-### Tasks
-1. Ensure `package.json` has `packageManager` pinned to pnpm.
-2. Ensure `pnpm-lock.yaml` exists and is updated.
-3. Remove npm/yarn lock artifacts listed above when present.
-4. Normalize scripts and workflow commands to `pnpm`.
-5. Align README command examples with pnpm-only usage.
-
-### Validation
-- `pnpm install` succeeds.
-- No conflicting lockfiles remain.
-- CI uses pnpm for dependency install and script execution.
-
----
-
 ## Phase 2 — Biome lint/format configuration hardening
 ### Objectives
 - Enforce consistent formatting and practical linting quality with Biome.
@@ -110,20 +91,21 @@ We want this starter Next.js project to be clean and consistent across setup, co
 
 ## Phase 6 — GitHub Actions quality workflow
 ### Objectives
-- Enforce code-quality gates consistently on branches via CI.
+- Enforce code-quality gates consistently on **every branch** via CI.
 
 ### Tasks
 1. Create/update a GitHub Action workflow for quality checks.
-2. Ensure workflow runs with pnpm and includes:
+2. Configure triggers so the workflow runs for pushes/pull requests on every branch.
+3. Ensure workflow runs with pnpm and includes:
    - Knip dead-code check,
    - TypeScript typecheck,
    - Biome linting and formatting checks,
    - size-limit bundle-size check.
-3. Keep workflow permissions minimal and setup cache-friendly.
-4. Document CI quality workflow at a high level in README.
+4. Keep workflow permissions minimal and setup cache-friendly.
+5. Document CI quality workflow at a high level in README.
 
 ### Validation
-- Workflow triggers correctly on intended branches/events.
+- Workflow triggers correctly on pushes/pull requests for every branch.
 - CI fails when any configured quality check fails.
 
 ---
