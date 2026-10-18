@@ -18,22 +18,6 @@ We want this starter Next.js project to be clean and consistent across setup, co
   - `npm-shrinkwrap.json` (if present)
 - For size-limit, use a **minimal starter budget** appropriate for a skeleton app.
 
-## Phase 3 — Dead code checks with Knip
-### Objectives
-- Detect and prevent unused files/exports/dependencies.
-
-### Tasks
-1. Add/verify Knip configuration file and scope.
-2. Add/verify `pnpm knip` script.
-3. Tune exclusions only where intentional and documented.
-4. Document dead-code check usage in README.
-
-### Validation
-- `pnpm knip` runs cleanly.
-- CI fails on new dead-code issues.
-
----
-
 ## Phase 4 — TypeScript checks for type errors
 ### Objectives
 - Enforce static type safety in local development and CI.

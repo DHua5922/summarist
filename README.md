@@ -20,6 +20,7 @@ Use Biome for linting and formatting:
 pnpm lint
 pnpm format
 pnpm format:check
+pnpm knip
 ```
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

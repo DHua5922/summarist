@@ -46,3 +46,23 @@
 - CI quality workflow includes Biome checks.
 
 ---
+
+## Phase 3 — Dead code checks with Knip
+
+### Objectives
+
+- Detect and prevent unused files/exports/dependencies.
+
+### Tasks
+
+1. Add/verify Knip configuration file and scope.
+2. Add/verify `pnpm knip` script.
+3. Tune exclusions only where intentional and documented.
+4. Document dead-code check usage in README.
+
+### Validation
+
+- `pnpm knip` runs cleanly.
+- CI fails on new dead-code issues.
+
+---
